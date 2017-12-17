@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ------------
 ### Added
 - Added `engines` metadata to the package.
+- Added "To-Do" section to the readme.
 
 ### Fixed
 - Fixed incorrect link target for the [0.1.1] changeset.
