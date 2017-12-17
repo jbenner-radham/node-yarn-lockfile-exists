@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Added `engines` metadata to the package.
 - Expanded code coverage.
+- Added `readme-md-cli` project config.
 
 ### Fixed
 - Fixed incorrect link target for the [0.1.1] changeset.
