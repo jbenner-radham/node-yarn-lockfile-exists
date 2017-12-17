@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [Unreleased]
 ------------
 ### Added
+- Added an optional `parameters.cwd` argument to specify a different directory to operate in.
 - Added `engines` metadata to the package.
 - Expanded code coverage.
 - Added `readme-md-cli` project config.
