@@ -11,7 +11,7 @@
     "lint": "eslint {lib,spec}",
     "prepublishOnly": "trevor",
     "readme": "readme-md > README.md",
-    "test": "$_ run lint && jasmine"
+    "test": "$npm_execpath run lint && jasmine"
   },
   "keywords": [
     "exists",
