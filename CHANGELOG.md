@@ -5,10 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+[Unreleased]
+------------
+### Added
+- Added `engines` metadata to the package.
+
+### Fixed
+- Fixed incorrect link target for the [0.1.1] changeset.
+
 [0.1.1] - 2017-12-16
 --------------------
 ### Added
-- Package Git metadata.
+- Added Git metadata to the package.
 
 ### Changed
 - Slight reformatting of readme.
@@ -18,4 +26,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial release.
 
-[0.1.1]: https://github.com/jbenner-radham/node-yarn-lockfile-exists/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/jbenner-radham/node-yarn-lockfile-exists/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/jbenner-radham/node-yarn-lockfile-exists/compare/v0.1.0...v0.1.1
