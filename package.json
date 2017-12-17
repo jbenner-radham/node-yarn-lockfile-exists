@@ -27,5 +27,13 @@
     "jasmine": "^2.8.0",
     "readme-md": "^0.4.0",
     "trevor": "^2.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbenner-radham/node-yarn-lockfile-exists.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jbenner-radham/node-yarn-lockfile-exists/issues"
+  },
+  "homepage": "https://github.com/jbenner-radham/node-yarn-lockfile-exists#readme"
 }
