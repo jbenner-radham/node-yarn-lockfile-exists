@@ -26,10 +26,6 @@ Testing
 $ yarn test # Or alternatively: `npm test`
 ```
 
-To-Do
------
-- [ ] Expand code coverage.
-
 License
 -------
 The MIT License (Expat). See the [license file](LICENSE) for details.
