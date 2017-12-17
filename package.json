@@ -2,6 +2,9 @@
   "name": "yarn-lockfile-exists",
   "version": "0.1.1",
   "description": "Check for a Yarn lockfile in the current working directory.",
+  "engines": {
+    "node": ">=6.0"
+  },
   "main": "lib/index.js",
   "directories": {
     "lib": "lib",
