@@ -28,7 +28,7 @@
   "devDependencies": {
     "eslint": "^4.13.1",
     "jasmine": "^2.8.0",
-    "readme-md": "^0.4.0",
+    "readme-md-cli": "^0.5.1",
     "trevor": "^2.3.0"
   },
   "repository": {
