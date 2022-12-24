@@ -1,4 +1,5 @@
 import fs from 'fs-extra';
+import os from 'node:os';
 import path from 'node:path';
 import { temporaryDirectory } from 'tempy';
 import yarnLockfileExists from '../lib/index.js';
@@ -21,6 +22,11 @@ describe('yarnLockfileExists', function () {
     });
 
     afterEach(function () {
+        // Trying to fix the weirdness on Windows with Node 18
+        if (os.platform().startsWith('win') && this.cwd.startsWith('\\\\?\\')) {
+            this.cwd = this.cwd.replace('\\\\?\\', '');
+        }
+
         fs.removeSync(this.cwd);
     });
 
