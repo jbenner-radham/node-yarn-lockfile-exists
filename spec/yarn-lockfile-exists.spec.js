@@ -1,6 +1,6 @@
 import fs from 'fs-extra';
 import path from 'node:path';
-import tempy from 'tempy';
+import { temporaryDirectory } from 'tempy';
 import yarnLockfileExists from '../lib/index.js';
 
 const { any } = jasmine;
@@ -15,7 +15,7 @@ describe('yarnLockfileExists', function () {
     });
 
     beforeEach(function () {
-        this.cwd = tempy.directory();
+        this.cwd = temporaryDirectory();
 
         process.chdir(this.cwd);
     });
@@ -39,7 +39,7 @@ describe('yarnLockfileExists', function () {
     });
 
     it('returns `true` if a `yarn.lock` file is in the specified working directory', function () {
-        const specifiedCwd = tempy.directory();
+        const specifiedCwd = temporaryDirectory();
 
         fs.removeSync(path.join(this.cwd, 'yarn.lock'));
         fs.ensureFileSync(path.join(specifiedCwd, 'yarn.lock'));
@@ -47,7 +47,7 @@ describe('yarnLockfileExists', function () {
     });
 
     it('returns `false` if no `yarn.lock` file is in the specified working directory', function () {
-        const specifiedCwd = tempy.directory();
+        const specifiedCwd = temporaryDirectory();
 
         fs.removeSync(path.join(this.cwd, 'yarn.lock'));
         fs.removeSync(path.join(specifiedCwd, 'yarn.lock'));
