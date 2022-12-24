@@ -7,8 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 [Unreleased]
 ------------
+### Added
+- Add [TypeScript](https://www.typescriptlang.org/) types.
+
 ### Changed
 - The filepath logic has been changed to better accommodate Windows environments.
+- Nonessential files should no longer be part of the published package.
+- The minimum required [Node.js](https://nodejs.org/) is now v16.
+- Change over to [ES Modules](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c) from CommonJS.
 
 [0.2.0] - 2017-12-17
 --------------------

@@ -1,10 +1,9 @@
-'use strict';
+import fs from 'fs-extra';
+import path from 'node:path';
+import tempy from 'tempy';
+import yarnLockfileExists from '../lib/index.js';
 
-const any = jasmine.any;
-const fs = require('fs-extra');
-const path = require('path');
-const tempy = require('tempy');
-const yarnLockfileExists = require('../');
+const { any } = jasmine;
 
 describe('yarnLockfileExists', function () {
     beforeAll(function () {
