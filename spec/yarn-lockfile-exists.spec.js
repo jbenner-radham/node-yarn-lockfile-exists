@@ -27,7 +27,7 @@ describe('yarnLockfileExists', function () {
             console.log({ cwd: this.cwd });
         }
 
-        fs.removeSync(this.cwd);
+        // fs.removeSync(this.cwd);
     });
 
     it('is a function', function () {
