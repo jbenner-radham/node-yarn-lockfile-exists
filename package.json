@@ -13,7 +13,7 @@
   "scripts": {
     "lint": "eslint {lib,spec}",
     "readme": "readme-md > README.md",
-    "test": "$npm_execpath run lint && jasmine"
+    "test": "jasmine"
   },
   "keywords": [
     "exists",
