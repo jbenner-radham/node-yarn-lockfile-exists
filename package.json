@@ -2,9 +2,23 @@
   "name": "yarn-lockfile-exists",
   "version": "0.2.0",
   "description": "Check for a Yarn lockfile in the current working directory.",
-  "engines": {
-    "node": ">=6.0"
+  "keywords": [
+    "exists",
+    "file",
+    "lock",
+    "lockfile",
+    "yarn"
+  ],
+  "homepage": "https://github.com/jbenner-radham/node-yarn-lockfile-exists#readme",
+  "bugs": {
+    "url": "https://github.com/jbenner-radham/node-yarn-lockfile-exists/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbenner-radham/node-yarn-lockfile-exists.git"
+  },
+  "license": "MIT",
+  "author": "James Benner <james.benner@gmail.com> (https://www.jamesbenner.com/)",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib",
@@ -16,29 +30,17 @@
     "readme": "readme-md > README.md",
     "test": "jasmine"
   },
-  "keywords": [
-    "exists",
-    "file",
-    "lock",
-    "lockfile",
-    "yarn"
-  ],
-  "author": "James Benner <james.benner@gmail.com> (https://www.jamesbenner.com/)",
-  "license": "MIT",
   "devDependencies": {
     "eslint": "^8.30.0",
     "fs-extra": "^5.0.0",
     "husky": "^8.0.2",
     "jasmine": "^3.99",
+    "lint-staged": "^13.1.0",
     "readme-md-cli": "^0.5.1",
+    "sort-package-json": "^2.1.0",
     "tempy": "^0.2.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jbenner-radham/node-yarn-lockfile-exists.git"
-  },
-  "bugs": {
-    "url": "https://github.com/jbenner-radham/node-yarn-lockfile-exists/issues"
-  },
-  "homepage": "https://github.com/jbenner-radham/node-yarn-lockfile-exists#readme"
+  "engines": {
+    "node": ">=6.0"
+  }
 }
