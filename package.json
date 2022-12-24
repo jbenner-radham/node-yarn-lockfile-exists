@@ -12,6 +12,7 @@
   },
   "scripts": {
     "lint": "eslint . --ext .js --ignore-path .gitignore",
+    "prepare": "husky install",
     "readme": "readme-md > README.md",
     "test": "jasmine"
   },
@@ -27,6 +28,7 @@
   "devDependencies": {
     "eslint": "^8.30.0",
     "fs-extra": "^5.0.0",
+    "husky": "^8.0.2",
     "jasmine": "^3.99",
     "readme-md-cli": "^0.5.1",
     "tempy": "^0.2.1"
