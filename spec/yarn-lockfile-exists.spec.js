@@ -23,8 +23,8 @@ describe('yarnLockfileExists', function () {
 
     afterEach(function () {
         // Trying to fix the weirdness on Windows with Node 18
-        if (os.platform().startsWith('win') && this.cwd.startsWith('\\\\?\\')) {
-            this.cwd = this.cwd.replace('\\\\?\\', '');
+        if (os.platform().startsWith('win')) {
+            console.log({ cwd: this.cwd });
         }
 
         fs.removeSync(this.cwd);
