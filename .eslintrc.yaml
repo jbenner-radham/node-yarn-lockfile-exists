@@ -1,6 +1,17 @@
 ---
+root: true
 extends: eslint:recommended
 env:
   es6: true
-  jasmine: true
   node: true
+plugins:
+  - prettier
+rules:
+  prettier/prettier: error
+  quotes: off
+  semi: off
+overrides:
+  - files:
+    - '*.spec.js'
+    env:
+      jasmine: true

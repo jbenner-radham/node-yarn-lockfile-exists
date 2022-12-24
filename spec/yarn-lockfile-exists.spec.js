@@ -16,13 +16,13 @@ describe('yarnLockfileExists', function () {
     });
 
     beforeEach(function () {
-       this.cwd = tempy.directory();
+        this.cwd = tempy.directory();
 
-       process.chdir(this.cwd);
+        process.chdir(this.cwd);
     });
 
     afterEach(function () {
-       fs.removeSync(this.cwd);
+        fs.removeSync(this.cwd);
     });
 
     it('is a function', function () {
@@ -44,7 +44,7 @@ describe('yarnLockfileExists', function () {
 
         fs.removeSync(path.join(this.cwd, 'yarn.lock'));
         fs.ensureFileSync(path.join(specifiedCwd, 'yarn.lock'));
-        expect(yarnLockfileExists({cwd: specifiedCwd})).toBe(true);
+        expect(yarnLockfileExists({ cwd: specifiedCwd })).toBe(true);
     });
 
     it('returns `false` if no `yarn.lock` file is in the specified working directory', function () {
@@ -52,7 +52,7 @@ describe('yarnLockfileExists', function () {
 
         fs.removeSync(path.join(this.cwd, 'yarn.lock'));
         fs.removeSync(path.join(specifiedCwd, 'yarn.lock'));
-        expect(yarnLockfileExists({cwd: specifiedCwd})).toBe(false);
+        expect(yarnLockfileExists({ cwd: specifiedCwd })).toBe(false);
     });
 
     it('returns a Boolean', function () {
