@@ -24,6 +24,9 @@
     "lib": "lib",
     "test": "spec"
   },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "lint": "eslint . --ext .js --ignore-path .gitignore",
     "prepare": "husky install",
