@@ -25,7 +25,7 @@ describe('yarnLockfileExists', function () {
     afterEach(function () {
         // Trying to fix the weirdness on Windows with Node 18
         if (os.platform().startsWith('win')) {
-            execaCommandSync(`Remove-Item -Force ${this.cwd}`);
+            execaCommandSync(`powershell.exe -Command "Remove-Item -Force ${this.cwd}"`);
         } else {
             fs.removeSync(this.cwd);
         }
