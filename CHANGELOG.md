@@ -5,8 +5,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-[Unreleased]
-------------
+[1.0.0] - 2022-12-24
+--------------------
 ### Added
 - Add [TypeScript](https://www.typescriptlang.org/) types.
 
@@ -40,6 +40,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial release.
 
-[Unreleased]: https://github.com/jbenner-radham/node-yarn-lockfile-exists/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/jbenner-radham/node-yarn-lockfile-exists/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/jbenner-radham/node-yarn-lockfile-exists/compare/v0.2.0...v1.0.0
 [0.2.0]: https://github.com/jbenner-radham/node-yarn-lockfile-exists/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/jbenner-radham/node-yarn-lockfile-exists/compare/v0.1.0...v0.1.1
