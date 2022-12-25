@@ -23,7 +23,9 @@ describe('yarnLockfileExists', function () {
     });
 
     afterEach(function () {
-        // Trying to fix the weirdness on Windows with Node 18
+        // In GitHub Actions on windows-latest (Win10) with Node.js 18 the
+        // `fs.removeSync` command fails with "Error: EBUSY: resource busy or locked"
+        // so we use this PowerShell command to work around it.
         if (os.platform().startsWith('win')) {
             execaCommandSync(`powershell.exe -Command "Remove-Item -Force ${this.cwd}"`);
         } else {
