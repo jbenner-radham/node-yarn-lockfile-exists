@@ -1,3 +1,4 @@
+import { execaCommandSync } from 'execa';
 import fs from 'fs-extra';
 import os from 'node:os';
 import path from 'node:path';
@@ -24,10 +25,10 @@ describe('yarnLockfileExists', function () {
     afterEach(function () {
         // Trying to fix the weirdness on Windows with Node 18
         if (os.platform().startsWith('win')) {
-            console.log({ cwd: this.cwd });
+            execaCommandSync(`Remove-Item -Force ${this.cwd}`);
+        } else {
+            fs.removeSync(this.cwd);
         }
-
-        // fs.removeSync(this.cwd);
     });
 
     it('is a function', function () {
